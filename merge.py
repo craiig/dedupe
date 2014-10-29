@@ -56,6 +56,7 @@ def merge_record(a, b, header=None):
 				print "A was parsed as " + str(new[i])
 				print "B was parsed as " + str(  map(lambda x: x.strip(), b[i].split(",")))
 				new[i] = ", ".join(set(new[i] + map( lambda x: x.strip(), b[i].split(",")))) #sorry sorry sorry
+				print "A+B merged is: " + new[i]
 
 	return new
 
